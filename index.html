@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Privacy Policy | Call Manager</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f5f7fb;
+            font-family: system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+            line-height: 1.55;
+            color: #1a202c;
+            padding: 2rem 1rem;
+        }
+
+        /* Main container */
+        .policy-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 28px;
+            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.02);
+            overflow: hidden;
+            padding: 2rem 2rem 3rem;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 1rem 0.75rem;
+            }
+            .policy-container {
+                padding: 1.5rem 1.2rem 2rem;
+                border-radius: 24px;
+            }
+        }
+
+        /* Header area */
+        .doc-header {
+            border-bottom: 2px solid #eef2f6;
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .app-badge {
+            display: inline-block;
+            background: #eef2ff;
+            color: #1e40af;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.2rem 0.8rem;
+            border-radius: 40px;
+            letter-spacing: 0.3px;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.1rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #0f2b3d, #1e4a6e);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            letter-spacing: -0.3px;
+            margin-bottom: 0.5rem;
+        }
+
+        .update-date {
+            color: #5b6e8c;
+            font-size: 0.9rem;
+            margin-top: 0.3rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .update-date span {
+            background: #f0f2f5;
+            padding: 0.2rem 0.6rem;
+            border-radius: 30px;
+            font-size: 0.8rem;
+        }
+
+        /* Typography */
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin: 1.8rem 0 0.8rem 0;
+            color: #0b3550;
+            border-left: 4px solid #2c7da0;
+            padding-left: 1rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 1.4rem 0 0.5rem 0;
+            color: #2c3e50;
+        }
+
+        h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 1rem 0 0.25rem 0;
+            color: #1f4e6e;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #2d3a4b;
+        }
+
+        .legal-list {
+            margin: 1rem 0 1rem 1.8rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+            color: #2d3a4b;
+        }
+
+        strong {
+            color: #0f3b5c;
+            font-weight: 600;
+        }
+
+        hr {
+            margin: 2rem 0;
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, #e2e8f0, transparent);
+        }
+
+        /* permission badges */
+        .perm-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin: 1rem 0 1rem 0;
+        }
+        .perm-badge {
+            background: #eef2fa;
+            font-family: monospace;
+            font-size: 0.75rem;
+            font-weight: 500;
+            padding: 0.25rem 0.8rem;
+            border-radius: 20px;
+            color: #1e4663;
+            letter-spacing: 0.2px;
+        }
+
+        .highlight-box {
+            background: #f0f9ff;
+            border-left: 5px solid #1e6f5c;
+            padding: 1.2rem 1.5rem;
+            border-radius: 20px;
+            margin: 1.5rem 0;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+        }
+
+        .highlight-box strong {
+            color: #1e6f5c;
+        }
+
+        .footer-contact {
+            background: #f8fafc;
+            border-radius: 24px;
+            padding: 1.5rem;
+            margin-top: 2.5rem;
+            text-align: center;
+            border: 1px solid #e9edf2;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 0.8rem;
+            font-weight: 500;
+        }
+
+        a {
+            color: #1e6f9f;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: 0.2s;
+        }
+
+        a:hover {
+            border-bottom-color: #1e6f9f;
+            color: #0c4e6e;
+        }
+
+        .small-note {
+            font-size: 0.85rem;
+            color: #5a6e8a;
+            margin-top: 0.5rem;
+        }
+
+        /* Tables for spam section */
+        .inline-code {
+            background: #edf2f7;
+            font-family: monospace;
+            padding: 0.2rem 0.4rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.7rem;
+            }
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="policy-container">
+    <div class="doc-header">
+        <div class="app-badge">📞 Call Manager · Privacy First</div>
+        <h1>Privacy Policy</h1>
+        <div class="update-date">
+            📅 Updated at May 11th, 2026
+            <span>📍 Kenya · Datavenorg</span>
+        </div>
+        <p style="margin-top: 1rem; font-size: 0.95rem;">Datavenorg ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by <strong>Call Manager</strong>, our call managing application. By accessing or using our Service, you signify that you have read, understood, and agree to our practices described below and our Terms of Service.</p>
+    </div>
+
+    <!-- Definitions -->
+    <h2>📖 Definitions & key terms</h2>
+    <p>To help explain things as clearly as possible, these terms are strictly defined:</p>
+    <ul class="legal-list">
+        <li><strong>Cookie</strong> – small amount of data generated by a website and saved by your browser.</li>
+        <li><strong>Company</strong> – refers to Datavenorg, makers of Call Manager App (Kenya).</li>
+        <li><strong>Country</strong> – <strong>Kenya</strong>, where Datavenorg is based.</li>
+        <li><strong>Device</strong> – any internet-connected device (phone, tablet, computer).</li>
+        <li><strong>IP address</strong> – number assigned to devices connected to the Internet.</li>
+        <li><strong>Personal Data</strong> – information that allows identification of a natural person.</li>
+        <li><strong>Service</strong> – the service provided by Call Manager.</li>
+        <li><strong>Third-party service</strong> – advertisers, partners, etc.</li>
+        <li><strong>You</strong> – a person or entity that installed Call Manager.</li>
+    </ul>
+
+    <!-- Core principle: Local Data Sovereignty -->
+    <h2>🔒 1. Core Privacy Principle: Local Data Sovereignty</h2>
+    <div class="highlight-box">
+        <strong>⚡ Local-first architecture</strong><br>
+        ✅ <strong>No External Servers:</strong> We do not use outside servers to store, process, or backup your personal call data.<br>
+        ✅ <strong>On-Device Analysis:</strong> All missed call grouping, history analysis, and frequency statistics are calculated directly on your device using your local call log.<br>
+        ✅ <strong>Privacy by Design:</strong> Your sensitive communication history never leaves your physical control — a core selling point of our service.
+    </div>
+
+    <!-- Permissions -->
+    <h2>📲 2. Permissions Requested and Why</h2>
+    <p>To provide core call management and hands-free features, the App requires specific permissions. Here is exactly how we use them:</p>
+
+    <h3>📞 Call and Contact Management</h3>
+    <div class="perm-grid">
+        <span class="perm-badge">READ_CALL_LOG</span>
+        <span class="perm-badge">READ_CONTACTS</span>
+        <span class="perm-badge">READ_PHONE_STATE</span>
+        <span class="perm-badge">CALL_PHONE</span>
+    </div>
+    <ul class="legal-list">
+        <li><strong>READ_CALL_LOG</strong> – Essential to read missed calls and group them by caller (e.g., "James Mwangi called 3 times").</li>
+        <li><strong>READ_CONTACTS</strong> – Resolves phone numbers into names from your device’s contact book.</li>
+        <li><strong>READ_PHONE_STATE</strong> – Detects incoming calls in real-time to trigger management features.</li>
+        <li><strong>CALL_PHONE</strong> – Enables returning missed calls directly from the app interface.</li>
+    </ul>
+
+    <h3>🎙️ Hands-Free & Premium Features</h3>
+    <div class="perm-grid">
+        <span class="perm-badge">RECORD_AUDIO</span>
+        <span class="perm-badge">FOREGROUND_SERVICE_MICROPHONE</span>
+        <span class="perm-badge">FOREGROUND_SERVICE</span>
+        <span class="perm-badge">RECEIVE_BOOT_COMPLETED</span>
+    </div>
+    <ul class="legal-list">
+        <li><strong>RECORD_AUDIO & FOREGROUND_SERVICE_MICROPHONE</strong> – Used strictly for "Go Premium" hands-free mode to assist drivers via voice commands. <strong>No audio is ever recorded to a file or sent to a server.</strong></li>
+        <li><strong>FOREGROUND_SERVICE</strong> – Ensures hands-free assistance or auto-redial tasks continue reliably.</li>
+        <li><strong>RECEIVE_BOOT_COMPLETED</strong> – Resumes scheduled auto-redial lists or updates local spam database after phone restart.</li>
+    </ul>
+
+    <h3>💾 Storage and Connectivity</h3>
+    <ul class="legal-list">
+        <li><strong>READ_EXTERNAL_STORAGE / WRITE_EXTERNAL_STORAGE</strong> – Used on older Android versions (SDK ≤28) to locally store app-specific settings or bundled spam database.</li>
+        <li><strong>INTERNET</strong> – Used for three specific tasks: (1) displaying a single Google AdMob banner for free tier users; (2) processing premium upgrades via Google Play Billing Library; (3) periodically downloading updated list of known spam numbers to keep local database current.</li>
+    </ul>
+
+    <!-- Spam detection -->
+    <h2>🛡️ 3. Spam Detection & Third-Party Interactions</h2>
+    <ul class="legal-list">
+        <li><strong>Local Spam Check:</strong> Basic spam detection uses a local database bundled within the App and updated periodically.</li>
+        <li><strong>Enhanced Spam Intelligence:</strong> For premium users, the App may check numbers against a cloud-based spam score with explicit disclosure. We never send your personal contacts to third-party APIs without consent.</li>
+        <li><strong>Truecaller Integration:</strong> If you choose to use Truecaller lookup, the App only sends the phone number to the Truecaller app via a standard Android intent. This only happens when you manually tap the "Likely Spam" badge.</li>
+    </ul>
+
+    <!-- Data safety -->
+    <h2>🔐 4. Data Safety and Disclosure</h2>
+    <div class="highlight-box">
+        ✅ <strong>No Data Collection:</strong> We do not collect, sell, or rent your personal information to third parties.<br>
+        ✅ <strong>Local Retention:</strong> All analysis is done in memory or stored in the App’s local private storage.<br>
+        ✅ <strong>User Control:</strong> Because we use sensitive permissions like READ_CALL_LOG, we provide clear onboarding to explain that your call data never leaves the device <em>unless you opt-in to specific premium spam features</em>.
+    </div>
+
+    <!-- Governing Law -->
+    <h2>⚖️ Governing Law</h2>
+    <p>This Privacy Policy is governed by the laws of <strong>Kenya</strong> without regard to its conflict of laws provision. You consent to the exclusive jurisdiction of the courts in Kenya in connection with any action or dispute arising under this Privacy Policy. By using Call Manager, you signify your acceptance of this Privacy Policy. If you do not agree, please do not use our services. Continued use after changes that do not significantly affect the use or disclosure of your personal information means you accept those changes.</p>
+
+    <!-- GDPR Section -->
+    <h2>🇪🇺 Information about GDPR (General Data Protection Regulation)</h2>
+    <p>We may be collecting and using information from you if you are from the European Economic Area (EEA). This section explains how and why data is collected, and how we maintain protection.</p>
+    <p><strong>What is GDPR?</strong> EU-wide privacy law that regulates how EU residents' data is protected and enhances individual control. At Call Manager, we implement GDPR controls as baseline standard for all operations worldwide.</p>
+    <p><strong>Personal data under GDPR</strong> includes any information relating to an identified or identifiable person (name, IP, biometric data, etc.). The data protection principles require fairness, purpose limitation, data minimisation, and storage limits. Data subjects have the right to access, rectify, erase, restrict processing, and data portability.</p>
+    <p><strong>Individual Data Subject Rights:</strong> Call Manager processes/stores all personal data in DPA compliant vendors. We store conversation and personal data for up to <strong>6 years</strong> unless your account is deleted, after which we dispose of data within 60 days. We support self-service access, retrieval, and removal. Contact support for any GDPR requests.</p>
+
+    <!-- Consent & Changes -->
+    <h2>📝 Your Consent & Changes to This Policy</h2>
+    <p>By using Call Manager, registering an account, or making a purchase, you hereby consent to this Privacy Policy. We may change our Service and policies, and we may update this Privacy Policy to accurately reflect them. Unless otherwise required by law, we will notify you (e.g., through our Service) before changes go into effect and give you an opportunity to review them. If you continue to use the Service, you will be bound by the updated Privacy Policy. If you do not agree, you can delete your account.</p>
+
+    <!-- Contact information -->
+    <div class="footer-contact">
+        <h3 style="margin: 0 0 0.5rem 0; border-left: none; padding-left: 0;">📬 Contact Us</h3>
+        <p style="margin-bottom: 0.5rem;">Don't hesitate to reach out if you have any questions about this Privacy Policy or your data.</p>
+        <div class="contact-details">
+            <span>✉️ <a href="mailto:datavenorg@gmail.com">datavenorg@gmail.com</a></span>
+            <span>📞 <a href="tel:+254706698349">+254 706 698 349</a></span>
+            <span>🔗 <a href="https://jmarindi.github.io/callmanager/#features" target="_blank" rel="noopener noreferrer">Project Page</a></span>
+        </div>
+        <p class="small-note" style="margin-top: 1rem;">Datavenorg — Nairobi, Kenya</p>
+    </div>
+
+    <hr>
+    <p class="small-note" style="text-align: center;">This Privacy Policy applies to Call Manager app and its associated services. Last revised: May 11, 2026. Your privacy is our priority: local data, total control.<br>© 2026 Datavenorg. All rights reserved.</p>
+</div>
+</body>
+</html>
